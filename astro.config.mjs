@@ -4,6 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://imake.space',
 	integrations: [
 		starlight({
 			title: '云朵创客空间',
