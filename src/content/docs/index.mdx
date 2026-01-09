@@ -7,7 +7,7 @@ hero:
   image:
     file: ../../assets/Logo.png
   actions:
-    - text: Sharepoint 站点
+    - text: SharePoint 站点
       link: https://dpfy.sharepoint.com/sites/imake.space/SitePages/home.aspx
       icon: external
     - text: LMS 学习管理系统
@@ -18,3 +18,13 @@ hero:
       link: /scratch/scratch-gui/
       icon: external
 ---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <LinkCard
+    title="Scratch 游戏编程"
+    description="学习如何使用 Scratch 创建有趣的游戏项目。"
+    href="/introduction/Coding-Games-in-Scratch/"
+  />
+</CardGrid>
