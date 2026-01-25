@@ -8,9 +8,9 @@ LMS（Learning Management System，学习管理系统）是一个在线平台，
 
 ## 如何使用云朵创客空间的 LMS
 1. **访问 LMS 平台**  
-   - 打开浏览器，直接访问 [云朵创客空间 LMS](https://lms.imake.space/)。https://lms.imake.space
+   - 打开浏览器，直接访问云朵创客空间 LMS 网站，https://lms.imake.space 。
 
-   - 或者通过云朵创客空间网站 [云朵创客空间](https://imake.space/) 导航到“LMS 学习管理系统”部分。
+   - 或者通过云朵创客空间网站，https://imake.space/ 导航到“LMS 学习管理系统”站点。
 2. **登录**  
    - 点击页面右上角的“登录”按钮。
    ![登录按钮截图](../../../../assets/lms/lmshomepage.png)
