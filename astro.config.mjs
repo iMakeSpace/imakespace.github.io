@@ -5,9 +5,26 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://imake.space',
+	vite: {
+		build: {
+			rollupOptions: {
+				onwarn(warning, warn) {
+					if (
+						warning.code === 'UNUSED_EXTERNAL_IMPORT' &&
+						warning.exporter?.includes('@astrojs/internal-helpers/remote') &&
+						warning.message.includes('node_modules/astro/dist/assets/utils/index.js')
+					) {
+						return;
+					}
+					warn(warning);
+				},
+			},
+		},
+	},
 	integrations: [
 		starlight({
 			title: '云朵创客空间',
+			disable404Route: true,
 			locales: {
             root: {
                 label: '简体中文',
